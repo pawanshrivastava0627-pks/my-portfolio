@@ -1,0 +1,295 @@
+body{
+      background: linear-gradient(120deg, #f8fffe 0%, #e0eafc 100%);
+
+}
+nav{
+    background-color:white ;
+    justify-content: end;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+nav ul
+{
+    display: flex;
+    align-items: end;
+    padding: 0% 10px;
+    list-style: none;
+}
+nav ul li a{
+    font-size: 16px;
+    padding: 0% 15px;
+    color: black;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    transition: 0.2s;
+    color: blue;
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+.hero{
+    padding:130px;
+}
+.hero img{
+    border-style: none;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 300px;
+    transform: rotate(350deg);
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+h1{
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0px 100px;
+}
+h2{
+    text-align: center;
+}
+.aboutme{
+    width: 90%;
+    max-width:  1100px; 
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 10px 10px 0px rgb(0 0 0/40%), -10px -10px 0px rgb(255 114 114/80%);
+
+} 
+.aboutme-section{
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    
+}
+.aboutme-image{
+    height: 450px;
+    width: 400px;
+    background-image: url('./Images/Pawan.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    display: block;
+}
+.aboutme-text{
+   max-width: 500px;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+    margin: 0 auto;
+    
+}
+
+.contact {
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.45);
+    text-align: center;
+    padding: 40px 20px 70px;
+    box-sizing: border-box;
+}
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+.contact h2, .contact p {
+    color: white;
+}
+
+.contact-form {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.contact-details {
+    flex: 1 1 250px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-details input {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.message {
+    flex: 2 1 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message textarea {
+    border-radius: 5px;
+    border: none;
+    min-height: 120px;
+    padding: 15px 20px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.message button {
+    color: #1d3d5f;
+    border: none;
+    border-radius: 5px;
+    background: lightblue;
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.message button:hover {
+    background: black;
+    color: white;
+    transition: 0.2s;
+}
+
+@media (max-width: 900px) {
+    .contact-form {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+    .contact-details, .message {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+
+.certificates {
+      padding: 60px 20px;
+      background: linear-gradient(120deg, #f8fffe 0%, #e0eafc 100%);
+      text-align: center;
+    }
+
+    .certificates h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #1e3c72;
+      letter-spacing: 1px;
+    }
+
+    /* Grid layout */
+    .cert-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    .cert-card {
+      background: #f0f0f0;
+      padding: 28px 22px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(30,60,114,0.13);
+      transition: transform 0.18s, box-shadow 0.18s;
+      border: 2px solid #e0eafc;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 12px 28px rgba(30,60,114,0.18);
+      border-color: #8fd3f4;
+    }
+
+    .cert-title {
+      font-size: 1.18rem;
+      font-weight: 600;
+      color: #1e3c72;
+      margin-bottom: 10px;
+    }
+
+    .cert-org {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 14px;
+    }
+
+    .cert-date {
+      font-size: 0.95rem;
+      color: #888;
+      margin-bottom: 18px;
+    }
+
+    .cert-card a {
+      display: inline-block;
+      padding: 9px 18px;
+      background: linear-gradient(90deg, #1e3c72 60%, #8fd3f4 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .cert-card a:hover {
+      background: linear-gradient(90deg, #2a5298 60%, #84fab0 100%);
+    }
+    .footer {
+    background: #1e3c72; /* Dark Blue Background */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #ffcc00; /* Hover Color */
+}
