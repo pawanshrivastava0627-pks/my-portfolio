@@ -80,7 +80,7 @@ h2{
 .aboutme-image{
     height: 450px;
     width: 400px;
-    background-image: url('./Images/Pawan.jpg');
+    background-image: url('Pawan.jpg');
     background-size: cover;
     background-position: center;
     margin: 0 auto;
@@ -293,3 +293,4 @@ h2{
 .footer .social-icons a:hover {
     color: #ffcc00; /* Hover Color */
 }
+
